@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+	int n, m;//n==바구니개수,m==공넣는횟수
+	int arr[101] = { 0, };
+	int a, b, c;
+	scanf("%d %d", &n, &m);
+	for (int i = 0; i < m; i++) {
+		scanf("%d %d %d", &a, &b, &c);
+		//a번바구니부터 b번바구니까지 c번호의공넣기 반복
+		for (int k = a; k <= b; k++) {
+			arr[k] = c;
+		}
+	}
+	//1번 바구니부터 n번바구니까지 배열안에 있는 숫자 출력
+	for (int j = 1; j <= n; j++) {
+		printf("%d ", arr[j]);//공백 나오게 출력(이거 찾는데 30분걸림;;)
+	}
+	return 0;
+}
