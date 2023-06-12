@@ -15,8 +15,8 @@ int main() {
         }
     }
 
-    for (int i = 1; i <= n; i++) {
-        printf("%d ", arr[i]);
+    for (int j = 1; j <= n; j++) {
+        printf("%d ", arr[j]);
     }
 
     return 0;
